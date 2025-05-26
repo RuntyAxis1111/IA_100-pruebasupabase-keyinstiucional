@@ -1,8 +1,7 @@
 import { createClient } from "@supabase/supabase-js"
 
-// Creamos el cliente de Supabase usando las variables de entorno
-const supabaseUrl = process.env.SUPABASE_URL || "https://reilyngaidrxfsoglnqz.supabase.co"
-const supabaseKey = process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_ANON || ""
+const supabaseUrl = process.env.SUPABASE_URL || ""
+const supabaseKey = process.env.SUPABASE_ANON_KEY || ""
 
 export const supabase = createClient(supabaseUrl, supabaseKey)
 
